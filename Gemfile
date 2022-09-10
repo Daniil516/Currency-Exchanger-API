@@ -9,6 +9,8 @@ gem "puma", "~> 5.0"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "httparty"
+gem "active_model_serializers", "~> 0.10.0"
+gem "kaminari"
 group :development, :test do
   gem "pry-rails"
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

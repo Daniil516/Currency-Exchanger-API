@@ -19,7 +19,7 @@ class CurrencyUpdater
       currencies_params.each do |currency_params|
         Currency
           .find_or_initialize_by(iso: currency_params[:iso])
-          .update(name: currency_params[:iso], rate: currency_params[:rate])
+          .update(name: currency_params[:name], rate: currency_params[:rate])
       end
     end
   end
@@ -35,12 +35,12 @@ class CurrencyUpdater
   end
 
   def currency_codes
-    @currency_codes = rates_list.keys - Currency::IGNORED_ISO_CODES
+    @currency_codes ||= rates_list.keys - Currency::IGNORED_ISO_CODES
   end
 
   def send_request(endpoint)
     HTTParty
-      .get("#{BASE_URL}/#{endpoint}", query: { app_id: APP_ID, show_alternative: true })
+      .get("#{BASE_URL}/#{endpoint}", query: {app_id: APP_ID, show_alternative: true})
       .parsed_response
   end
 end
