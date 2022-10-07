@@ -7,7 +7,7 @@ class ApplicationController < ActionController::API
     token = request.headers["Authorization"]&.split&.last
 
     unless token == AUTH_TOKEN
-      render json: {error: "Auth token invalid"}, status: :forbidden
+      render json: { error: "Bearer auth token invalid" }, status: :forbidden
     end
   end
 end

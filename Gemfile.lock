@@ -191,7 +191,6 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
-    pg (1.4.3)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -234,6 +233,7 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     rexml (3.2.5)
+    sqlite3 (1.5.2-x86_64-linux)
     strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
@@ -258,7 +258,6 @@ DEPENDENCIES
   debug
   httparty
   kaminari
-  pg (~> 1.1)
   pry-rails
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
@@ -267,6 +266,7 @@ DEPENDENCIES
   rspec-mocks!
   rspec-rails!
   rspec-support!
+  sqlite3
   tzinfo-data
   vcr
   webmock
