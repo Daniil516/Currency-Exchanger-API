@@ -70,7 +70,7 @@ This is my RoR study project that I created during  [good programmer course](htt
 ### Чтобы запустить
 
 - **ВНИМАНИЕ**: Это приложение использует ключи api для получения обменных курсов от внешних сервисов. У вас должен быть `master.key` в папке config. Попросите этот файл у [владельца](https://t.me/Grishchenko1) 
-- Вы должны иметь установленный ruby(3.0.2) на свой компьютер(как это сделать - [здесь](https://www.ruby-lang.org/en/documentation/installation/)
+- Вы должны иметь установленный ruby(3.0.2) на своём компьютере(как это сделать - [здесь](https://www.ruby-lang.org/en/documentation/installation/)
 
 1. Скачайте все файлы в отдельную папку
 2. Откройте командную строку
@@ -98,4 +98,4 @@ bundle exec rails s
 - Rails API
 - Bearer авторизация
 - Rails Service Objects
-- PПагинация, gem kaminari
+- Пагинация, gem kaminari
