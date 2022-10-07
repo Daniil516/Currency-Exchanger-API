@@ -56,7 +56,7 @@ This is my RoR study project that I created during  [good programmer course](htt
 
 ### Использование
 Вы запускаете приложение. Затем вы должны отправить допустимый(смотрите внизу) *get* запрос с bearer токеном(В Postman вы можете легко отправить запрос с bearer токеном, введя его во вкладке "Авторизация", фото ниже)
-![![image](https://userimages.githubusercontent.com/83035520/194614201-ee9199b6-3641-4f40-add2-d53cc0b2f1a3.png)
+![image](https://userimages.githubusercontent.com/83035520/194614201-ee9199b6-3641-4f40-add2-d53cc0b2f1a3.png)
 
 
 #### Возможные запросы:
